@@ -1,20 +1,27 @@
 # -*- coding: utf-8 -*-
-
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
-
+#-------------------------------------------------------------login
 cl = LINETCR.LINE()
 cl.login(qr=True)
 cl.loginResult()
 
-ki = kk = kc = cl 
+ki = LINETCR.LINE()
+ki.login(qr=True)
+ki.loginResult()
 
+kk = LINETCR.LINE()
+kk.login(qr=True)
+kk.loginResult()
+
+kc = LINETCR.LINE()
+kc.login(qr=True)
+kc.loginResult()
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
-
 helpMessage =""" Chivas Bot
 [Id︎]
 [Mid]
