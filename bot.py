@@ -107,8 +107,8 @@ wait = {
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
-    "clock":True,
-    "cName":"Chivas ",
+    "clock":False,
+    "cName":"",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
@@ -427,9 +427,9 @@ def bot(op):
                 if wait["leaveRoom"] == True:
                     cl.leaveRoom(msg.to)
             if msg.contentType == 16:
-                url = msg.contentMetadata("line://home/post?userMid="+mid+"&postId="+"new_post")
+                url = msg.contentMetadata("postEndUrl")
                 cl.like(url[25:58], url[66:], likeType=1001)
-        if op.type == 26:
+        if op.type == 25:
             msg = op.message
             if msg.contentType == 13:
                if wait["wblack"] == True:
