@@ -18,8 +18,8 @@ class Poll:
   host = "gd2.line.naver.jp";
   port = 443;
 
-   UA = "Line/7.18.0"
-   LA = "IOSIPAD\t7.18.0\tiPhone_OS\t10.12.0"
+  UA = "Line/7.18.0"
+  LA = "IOSIPAD\t7.18.0\tiPhone_OS\t10.12.0"
 
   rev = 0
 
